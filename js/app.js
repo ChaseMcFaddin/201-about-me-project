@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var userName;
 
@@ -6,8 +6,8 @@ var userName;
 askName();
 function askName() {
   userName = prompt('Welcome to my page superstar, what is your name?');
-  console.log('The user\'s name is' + name);
-  alert('Nice to have you ' + name + '. My name is Chase and today I\'m going to ask you some questions so you can have the extraordinary opportunity to get to know me better. Let\'s get started!');
+  console.log('The user\'s name is' + userName);
+  alert('Nice to have you ' + userName + '. My name is Chase and today I\'m going to ask you some questions so you can have the extraordinary opportunity to get to know me better. Let\'s get started!');
 }
 
 // Function 1 //
