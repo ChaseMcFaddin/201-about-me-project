@@ -1,0 +1,57 @@
+/* entire document */
+
+body {
+  background-color: lightslategray;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+
+}
+
+/* header */
+
+header {
+  background-color: darkslategray;
+  width: 960px;
+
+}
+
+#baseball {
+  width: 300px;
+  height: 300px;
+}
+
+#mud-run {
+  width: 300px;
+  height: 300px;
+}
+
+#kayak {
+  width: 300px;
+  height: 300px;
+}
+
+#park-ranger {
+  width: 300px;
+  height: 300px;
+}
+
+#jet-ski {
+  width: 300px;
+  height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
