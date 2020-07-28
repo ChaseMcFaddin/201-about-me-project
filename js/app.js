@@ -107,7 +107,7 @@ while (attempts < 3) {
 // Question 7 //
 
 var attemptsNBA = 0;
-var players = ['Michael Jordan', 'Lebron James', 'Allen Iverson', 'Steph Curry', 'Kobe Bryant'].toLowerCase();
+var players = ['Michael Jordan', 'Lebron James', 'Allen Iverson', 'Steph Curry', 'Kobe Bryant'];
 var NBA = prompt('There are many arguments for the greatest NBA players of all time, but what about the most influencial? Can you guess my top 5 list of NBA players that have transformed the game not only on, but off the court as well?').toLowerCase();
 
 while (attemptsNBA < 5) {
