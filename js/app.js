@@ -85,47 +85,47 @@ if (askQuestionFive === 'no' || askQuestionFive === 'n') {
 
 var attempts = 0;
 var askMike = Number(prompt('People often say Michael Jordan is better than Lebron James because he has more rings. This is not only a lazy argument because basketball is a team sport, but also because Michael doesn\'t have the most rings of all time. In fact, can you guess how many players have more rings than the great MJ?'));
-
 while (attempts < 3) {
   attempts++;
   if (askMike < 9) {
-  //console.log ('You wish! There are more players than this, guess again!');
+    //console.log('You wish! There are more players than this, guess again!');
     askMike = Number(prompt('You wish! There are more players than this, guess again!'));
   } else if (askMike > 9) {
-  //console.log ('I appreciate you\'re pessimism of MJ\'s greatness but not quite that many players have more rings than MJ, guess again');
+    //console.log('I appreciate you\'re pessimism of MJ\'s greatness but not quite that many players have more rings than MJ, guess again');
     askMike = Number(prompt('I appreciate you\'re pessimism of MJ\'s greatness but not quite that many players have more rings than MJ, guess again'));
   } else if (askMike === 9) {
-    askMike = Number(alert('Correct! There are nine players with more rings than MJ. So I guess he is the tenth greatest player of all time!'));
+    //console.log('Correct! There are nine players with more rings than MJ. So I guess he is the tenth greatest player of all time!');
+    alert('Correct! There are nine players with more rings than MJ. So I guess he is the tenth greatest player of all time!');
+    attempts = 10;
     finalScore++;
-    break;
   }
-} if (attempts === 3) {
+}
+if (attempts === 3) {
   alert('Out of guesses! The correct answer is 9');
 }
 
-
 // Question 7 //
 
-var attemptsNBA = 0;
-var players = ['Michael Jordan', 'Lebron James', 'Allen Iverson', 'Steph Curry', 'Kobe Bryant'];
-var NBA = prompt('There are many arguments for the greatest NBA players of all time, but what about the most influencial? Can you guess my top 5 list of NBA players that have transformed the game not only on, but off the court as well?').toLowerCase();
-
-while (attemptsNBA < 5) {
-  attemptsNBA++;
-  for (var i = 0; i < players.length; i++){
-    if (NBA === players[i]) {
-      //console.log ('Correct');
-      prompt('Excellent choice! Pick another player!');
-      attemptsNBA = 10;
+var attempts2 = 0;
+var askGame = prompt('I grew up playing video games, can you guess one of my favorite franchises?').toLowerCase();
+var videoGames = ['zelda','kingdom hearts','fable','pokemon'];
+while (attempts2 < 5) {
+  attempts2++;
+  for (var i = 0; i < videoGames.length; i++) {
+    if (askGame === videoGames[i]) {
+      //console.log('Excellet, that is indeed one of my favorite franchises!');
+      alert('Excellet, that is indeed one of my favorite franchises!');
+      attempts2 = 10;
       finalScore++;
     }
-  } if (attemptsNBA !== 10) {
-    // console.log('Try again');
-    NBA = prompt ('Incorrect, give it another guess').toLowerCase();
+  }
+  if (attempts2 !== 10) {
+    //console.log('Try again');
+    askGame = prompt('Try again');
   }
 }
-if (attemptsNBA === 5) {
-  alert(`Oops, looks like you are out of guesses, the correct answers were ${players}`);
+if (attempts2 === 5) {
+  alert(`Sorry, you are out of guesses, my favorite franchises are ${videoGames}`);
 }
 
 alert(`Thanks for playing my little about me guessing game ${userName}. You finished with ${finalScore} correct answers!`);
