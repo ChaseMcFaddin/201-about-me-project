@@ -1,18 +1,67 @@
 /* entire document */
 
-body {
-  background-color: lightslategray;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: white;
-
-}
-
 /* header */
 
 header {
   background-color: darkslategray;
   width: 960px;
+  margin: 30px;
+}
 
+#profile {
+  height: 400px;
+  width: 400px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+/* 
+// --------------------- body ------------------------ // */
+
+body {
+  background-color: lightslategray;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  width: 960px;
+  margin-left: 20px;
+}
+
+#p0 {
+  margin-left: 20px;
+}
+
+#p1 {
+  margin-left: 20px;
+}
+
+#p2 {
+  margin-left: 20px;
+}
+
+#p3 {
+  margin-left: 20px;
+}
+
+ol {
+  margin-left: 10px;
+}
+
+nav {
+  margin-left: 20px;
+}
+
+
+
+#article1 {
+  display: inline-block;
+}
+
+main {
+  background-color: darkslategray;
+  padding: 10px;
+}
+
+figure img {
+  display: inline;
 }
 
 #baseball {
@@ -43,6 +92,12 @@ header {
 
 
 
+footer {
+  background-color: darkslategray;
+}
+footer p {
+  margin-left: 20px;
+}
 
 
 
